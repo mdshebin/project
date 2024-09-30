@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+#section1 {
+    background: url('burger.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#section2 {
+    background: url('kfc.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#section3 {
+    background: url('kfc2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+top-buttons {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top-buttons {
+    position: absolute;
+    top: 10px; /* Adjust the top value to move it higher */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.top-buttons li {
+    margin-right: 10px;
+}
+
+.top-buttons a {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.top-buttons a:hover {
+    background: #ff5733; /* Background color on hover */
+}
+#section1 h1,
+#section1 p {
+    position: absolute;
+    left: 20px;
+    text-align: left;
+}
+#section1 h1 {
+    margin: 0; 
+    bottom: 400px;
+}
+#section1 p{
+    margin: 4; /* Remove default margin to move h1 to the top */
+    bottom: 200px;
+}
+#section2 h1 {
+    color: FFCD4B;
+}
+/* Style the "Book Now" button */
+#bookNowButton {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    left: 450px;
+    position: absolute;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: transparent; /* Set the content background to black */
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px; /* Apply rounded corners */
+    max-width: 400px;
+    position: relative;
+    color: white; /* Set the text color to white */
+}
+
+/* Style the close button in the popup (in red) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red; /* Set the close button color to red */
+}
+.popup-content input[type="text"],
+.popup-content input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the "Submit" button */
+.popup-content button[type="submit"] {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Change button color on hover */
+.popup-content button[type="submit"]:hover {
+    background: #ff5733;
+}
+/* Style the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2;
+}
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px; /* Add rounded corners to the cards */
+}
+
+.rounded-image {
+    max-width: 100%;
+    border-radius: 50%; /* Make the image rounded */
+}
+
+.cursive-text {
+    font-family: cursive;
+}
+
+.star {
+    color: gold;
+    font-size: 24px;
+    margin: 5px;
+}

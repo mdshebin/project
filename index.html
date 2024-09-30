@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFills Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="section1">
+        <ul class="top-buttons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <div>
+            <h1>"Exploring Delicious Horizons<br>for Your Cravings"</h1><button id="bookNowButton">Book Now</button>
+            
+        </div>
+    </section>
+
+    <div id="bookingPopup" class="popup">
+        <div id="overlay"></div>
+
+        <div class="popup-content">
+            <span class="close" onclick="closeBookNowTable()">&times;</span>
+            <h2>Book Your Table</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Contact no">
+                <input type="text" placeholder="Item">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="section2">
+        <div>
+            <h1>"Exciting News: Our Delicious Journey<br>Begins in Wayanad, Kerala!"</h1>
+            
+        </div>
+    </section>
+
+    <section id="section3">
+    </div>
+    <div>
+        <h1>Review</h1>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="person1.jpg" alt="Food Image 1" class="rounded-image">
+            <h2>Lara</h2>
+            <p class="cursive-text">"The food was simply outstanding! Each dish burst with flavor and left us craving for more. A delightful culinary experience."</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="person2.jpg" alt="Food Image 2" class="rounded-image">
+            <h2>Stefen</h2>
+            <p class="cursive-text">"A taste sensation! The chef's expertise shone through in every bite. It's a must-visit for food enthusiasts."</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="person4.jpg" alt="Food Image 3" class="rounded-image">
+            <h2>John</h2>
+            <p class="cursive-text">"The food was a pleasant surprise. The unique blend of spices and fresh ingredients created a memorable dining experience."</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+
+        function openBookNowTable() {
+    var bookNowTable = document.getElementById("bookingPopup");
+    var overlay = document.getElementById("overlay");
+    bookNowTable.style.display = "block";
+    overlay.style.display = "block";
+}
+
+function closeBookNowTable() {
+    var bookNowTable = document.getElementById("bookingPopup");
+    var overlay = document.getElementById("overlay");
+    bookNowTable.style.display = "none";
+    overlay.style.display = "none";
+}
+
+        // Attach a click event listener to the "Book Now" button
+        document.getElementById("bookNowButton").addEventListener("click", openBookNowTable);
+    </script>
+</body>
+</html>
