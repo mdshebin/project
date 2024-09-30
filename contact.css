@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('pizza.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Background overlay for readability */
+}
+
+.contact-content {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* Your existing CSS code */
+
+.map-container {
+    margin-top: 20px;
+}
