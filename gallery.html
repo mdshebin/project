@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="image-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <!-- Add more image elements here -->
+    </div>
+    <script>
+        const images = document.querySelectorAll('.image-container img');
+        let currentImage = images.length - 1; // Start from the last image
+
+        function changeImage() {
+            images[currentImage].style.transform = 'translateY(100%)';
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            images[currentImage].style.transform = 'translateY(0)';
+        }
+
+        setInterval(changeImage, 2000); // Change image every 2 seconds
+    </script>
+</body>
+</html>
